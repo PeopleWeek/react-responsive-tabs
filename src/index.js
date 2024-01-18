@@ -150,7 +150,7 @@ export default class Tabs extends Component {
           tabDimensionsNext[tabKey] = tabDimensions[tabKey];
         }
 
-        tabsTotalWidth += tabDimensionsNext[tabKey].width;
+        tabsTotalWidth += tabDimensionsNext[tabKey] ? tabDimensionsNext[tabKey].width : 0;
       }
     });
 
